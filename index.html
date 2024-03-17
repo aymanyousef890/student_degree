@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>Aymoon</title>
+</head>
+
+<body>
+  <!-- <section class="section_1">
+    <div class="the_input">
+      <select name="catg" id="filed" class=" form-select">
+        <option value="1">kdjdd</option>
+        <option value="2">nono</option>
+        <option value="3">kdjdd</option>
+        <option value="4">ayman</option>
+      </select>
+      <input checked class="form-check-reverse" type="radio" id="i_1" name="level" value="easy">
+      <label class="form-check-label" for="i_1">easy</label>
+      <input class="form-check-reverse" type="radio" name="level" id="i_2" value="normale">
+      <label class="form-check-label" for="i_2">normale</label>
+      <input type="radio" name="level" id="i_3" value="hard">
+      <label for="i_3">hard</label>
+    </div>
+  </section> -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="p-5">
+    <form class="row gy-2 gx-3 align-items-center justify-content-evenly pb-3 ">
+      <div class="col-auto">
+        <div class="input-group">
+          <div class="input-group-text">ID</div>
+          <input type="number" class="form-control" required id="input_id" placeholder="ex:43239921">
+        </div>
+      </div>
+      <div class="col-auto">
+        <input type="number" class="form-control" max="20" required id="midterm_" placeholder="enter your degree 0:20">
+      </div>
+      <div class="col-auto">
+
+        <input type="number" class="form-control" max="60" max required id="final_"
+          placeholder="enter your degree 0:60">
+      </div>
+
+
+      <div class="col-auto">
+        <button type="submit" onclick="add_student()" class="btn btn-success">Submit</button>
+      </div>
+    </form>
+    <table class="table pt-4">
+      <thead class="table-dark text-center">
+        <tr>
+          <th>#</th>
+          <th>ID</th>
+          <th>MID</th>
+          <th>FIN</th>
+          <th>total</th>
+        </tr>
+      </thead>
+      <tbody id="body">
+
+      </tbody>
+    </table>
+  </section>
+
+
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="js/main2.js"></script> -->
+  <script src="js/prom1.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+</body>
+
+</html>
